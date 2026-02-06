@@ -1,0 +1,31 @@
+.title::before,
+.title::after {
+    content: '\f005';
+    color: currentColor;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    font-size: 20px;
+    margin-inline: 4px;
+}
+
+.nail-divider {
+    position: relative;
+    height: 1px; /* Spessore della linea */
+    margin: 40px 0;
+    /* Sfumatura che svanisce ai lati per un effetto elegante */
+    background: linear-gradient(to right, transparent, var(--color-primary), transparent);
+    border: none;
+    text-align: center; /* Aiuta per l'allineamento orizzontale dell'icona */
+  }
+  
+  .nail-divider i {
+    position: absolute;
+    background-color: var(--color-bg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centratura perfetta verticale/orizzontale */
+    
+    padding: 0 15px; /* Spazio intorno all'icona */
+    color: var(--color-primary); /* Il rosa Primary-Title */
+    font-size: 1.2rem;
+  }
