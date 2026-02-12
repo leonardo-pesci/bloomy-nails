@@ -4,7 +4,7 @@ const observer = new IntersectionObserver((entries) => {
         entry.target.classList.add('animated');
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.5 });
   
   document.querySelectorAll('.nail-divider').forEach(divider => {
     observer.observe(divider);
